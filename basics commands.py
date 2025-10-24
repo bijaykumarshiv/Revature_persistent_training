@@ -150,33 +150,33 @@ str1[::3]
 'ba'
 str1[-4:-2]
 'ij'
->>> str1[-2:-4]
+str1[-2:-4]
 ''
->>> str1
+str1
 'bijay'
->>> str1.capitilize()
+str1.capitilize()
 Traceback (most recent call last):
   File "<pyshell#65>", line 1, in <module>
     str1.capitilize()
 AttributeError: 'str' object has no attribute 'capitilize'. Did you mean: 'capitalize'?
->>> str1.capitalize()
+str1.capitalize()
 'Bijay'
->>> str1.upper()
+str1.upper()
 'BIJAY'
->>> str1.lower()
+str1.lower()
 'bijay'
->>> str1.count('a')
+str1.count('a')
 1
->>> str1.endswith('y')
+str1.endswith('y')
 True
->>> str1.endswith('e')
+str1.endswith('e')
 False
->>> str1.find(a)
+str1.find(a)
 Traceback (most recent call last):
   File "<pyshell#72>", line 1, in <module>
     str1.find(a)
 NameError: name 'a' is not defined
->>> str1.find('a')
+str1.find('a')
 3
 >>> str1.find('u')
 -1
@@ -191,3 +191,28 @@ ValueError: substring not found
 b'bijay'
 >>> str1.replace('a','e')
 'bijey'
+>>> str1.split
+<built-in method split of str object at 0x0000022B10D9E550>
+>>> str1.split()
+['bijay']
+>>> numbers=[2,4,3,5]
+>>> id(numbers)
+2383989677312
+>>> numbers.append(6)
+>>> numberss
+Traceback (most recent call last):
+  File "<pyshell#84>", line 1, in <module>
+    numberss
+NameError: name 'numberss' is not defined. Did you mean: 'numbers'?
+>>> numbers
+[2, 4, 3, 5, 6]
+>>> id(numbers)
+2383989677312
+>>> numbers.index(4,500)
+Traceback (most recent call last):
+  File "<pyshell#87>", line 1, in <module>
+    numbers.index(4,500)
+ValueError: 4 is not in list
+>>> numbers.insert(4,400)
+>>> numbers
+[2, 4, 3, 5, 400, 6]
