@@ -75,42 +75,119 @@ input()
 input('Enter anumber')
 Enter anumber6
 '6'
->>> int(input('Enter a num'))
+int(input('Enter a num'))
 Enter a num5
 5
->>> boolean(input('Enter a num'))
+boolean(input('Enter a num'))
 Traceback (most recent call last):
   File "<pyshell#33>", line 1, in <module>
     boolean(input('Enter a num'))
 NameError: name 'boolean' is not defined
->>> bool(input('Enter a num'))
+bool(input('Enter a num'))
 Enter a num4
 True
->>> Truebool(input('Enter a num'))
-... Enter a num4
-... 
+Truebool(input('Enter a num'))
+Enter a num4
+
 SyntaxError: multiple statements found while compiling a single statement
->>> bool(input('Enter a num'))
-... Enter a num
+bool(input('Enter a num'))
+Enter a num
 SyntaxError: multiple statements found while compiling a single statement
->>> bool(input('Enter a num'))
-... Enter a num
+bool(input('Enter a num'))
+Enter a num
 SyntaxError: multiple statements found while compiling a single statement
->>> ""
+""
 ''
->>> bool(input('Enter a num'))
-... Enter a num
+bool(input('Enter a num'))
+Enter a num
 SyntaxError: multiple statements found while compiling a single statement
->>> bool(input('enter a  number'))
+bool(input('enter a  number'))
 enter a  number
 False
->>> 'hi'
 'hi'
->>> "hi"
 'hi'
->>> "Bijay's house"
+"hi"
+'hi'
 "Bijay's house"
->>> 'bijay's house'
+"Bijay's house"
+'bijay's house'
 SyntaxError: unterminated string literal (detected at line 1)
->>> 'bijay"s house'
 'bijay"s house'
+'bijay"s house'
+str1 = 'bijay'
+str1
+'bijay'
+len(str1)
+5
+str[4]
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    str[4]
+TypeError: type 'str' is not subscriptable
+str1[4]
+'y'
+str1[2]
+'j'
+str1[-1]
+'y'
+str1[0:2}
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
+str1[0:2]
+'bi'
+str1[5:]
+''
+str1[2:]
+'jay'
+str1[0:4:1]
+'bija'
+str1[0:5:2]
+'bjy'
+str1[0::3]
+'ba'
+str1[::2]
+'bjy'
+str1[::3]
+'ba'
+str1[-4:-2]
+'ij'
+>>> str1[-2:-4]
+''
+>>> str1
+'bijay'
+>>> str1.capitilize()
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    str1.capitilize()
+AttributeError: 'str' object has no attribute 'capitilize'. Did you mean: 'capitalize'?
+>>> str1.capitalize()
+'Bijay'
+>>> str1.upper()
+'BIJAY'
+>>> str1.lower()
+'bijay'
+>>> str1.count('a')
+1
+>>> str1.endswith('y')
+True
+>>> str1.endswith('e')
+False
+>>> str1.find(a)
+Traceback (most recent call last):
+  File "<pyshell#72>", line 1, in <module>
+    str1.find(a)
+NameError: name 'a' is not defined
+>>> str1.find('a')
+3
+>>> str1.find('u')
+-1
+>>> str1.index('a')
+3
+>>> str1.index('u')
+Traceback (most recent call last):
+  File "<pyshell#76>", line 1, in <module>
+    str1.index('u')
+ValueError: substring not found
+>>> str1.encode('utf-8')
+b'bijay'
+>>> str1.replace('a','e')
+'bijey'
