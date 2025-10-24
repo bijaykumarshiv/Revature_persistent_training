@@ -66,13 +66,13 @@ hi10
 print('sum : '+ '\n' ,num1+10)
 sum : 
  20
->>> input ()
+input ()
 input()
 'input()'
->>> input()
+input()
 5
 '5'
->>> input('Enter anumber')
+input('Enter anumber')
 Enter anumber6
 '6'
 >>> int(input('Enter a num'))
@@ -104,3 +104,13 @@ SyntaxError: multiple statements found while compiling a single statement
 >>> bool(input('enter a  number'))
 enter a  number
 False
+>>> 'hi'
+'hi'
+>>> "hi"
+'hi'
+>>> "Bijay's house"
+"Bijay's house"
+>>> 'bijay's house'
+SyntaxError: unterminated string literal (detected at line 1)
+>>> 'bijay"s house'
+'bijay"s house'
